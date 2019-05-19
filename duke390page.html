@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="homepage.html">Home</a></li>
+  <li><a href="rc200page.html">rc200</a></li>
+  <li><a href="rc390page.html">rc390</a></li>
+  <li><a href="duke200page.html">duke200</a></li>
+  <li><a href="duke250page.html">duke250</a></li>
+  <li><a class="active" href="duke390page.html">duke390</a></li>
+  <li><a href="contactuspage.html">contact us</a></li>
+</ul>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="linkforimagebutton.html">
+<style>
+.mySlides {display:none;}
+</style>
+<body>
+
+<h2 class="w3-center"></h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="duke3901.jpg" style="width:920px;height:520px;">
+  <img class="mySlides" src="duke3902.jpg" style="width:920px;height:520px;">
+  <img class="mySlides" src="duke3903.jpg" style="width:920px;height:520px;">
+  <img class="mySlides" src="duke3904.jpg" style="width:920px;height:520px;">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #f44336;} /* Red */ 
+</style>
+</head>
+<body>
+
+<h1>DUKE 390</h1>
+<pre>
+       EX-SHOWROOM        &#8377 2,42,835
+       RTO                  &#8377 48,518
+       RTO EXPENSE             &#8377 688
+       INSURANCE            &#8377 23,713
+       HANDLING CHARGES      &#8377 1,000 
+      ________________________________
+      ON-ROAD PRICE       &#8377 3,15,754
+</pre>
+<button class="button">specification</button>
+<button class="button button2">payment plan</button>
+<button class="button button3">buy</button>
+
+</body>
+</html>
